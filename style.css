@@ -11,6 +11,7 @@ h1 {
     text-decoration: underline;
     background-color: black;
     color: white;
+    padding-bottom: 10px;
 }
 h2 {
     color: white; 
@@ -18,10 +19,12 @@ h2 {
 
 .content {
     background-color: darkgrey;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 30px;
+    margin-bottom: 60px;
 }
 
 .photo1 {
