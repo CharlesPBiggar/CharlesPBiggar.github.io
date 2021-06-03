@@ -2,7 +2,7 @@
 */
 
 body {
-    background-color: #00a3fe;
+    background-color: #1e558d;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
     text-align: center;
     text-decoration: underline;
     background-color: darkgray;
-    color: white;
+    color: #00a3fe;
     padding-bottom: 10px;
 }
 h2 {
