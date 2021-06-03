@@ -2,14 +2,14 @@
 */
 
 body {
-    background-color: #19172c;
+    background-color: #00a3fe;
 }
 
 h1 {
     font-size: 60px;
     text-align: center;
     text-decoration: underline;
-    background-color: black;
+    background-color: darkgray;
     color: white;
     padding-bottom: 10px;
 }
