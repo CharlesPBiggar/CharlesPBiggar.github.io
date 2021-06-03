@@ -9,7 +9,7 @@ h1 {
     font-size: 60px;
     text-align: center;
     text-decoration: underline;
-    background-color: darkgray;
+    background-color: lightgray;
     color: #1e558d;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -20,7 +20,7 @@ h2 {
 }
 
 .content {
-    background-color: darkgrey;
+    background-color: lightgray;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -31,5 +31,5 @@ h2 {
 
 .photo1 {
     border-radius: 30px;
-    border-color: darkgray;
+    border-color: lightgray;
 }
