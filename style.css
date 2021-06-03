@@ -11,7 +11,8 @@ h1 {
     text-decoration: underline;
     background-color: darkgray;
     color: #1e558d;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 20px;
 }
 h2 {
