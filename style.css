@@ -2,7 +2,7 @@
 */
 
 body {
-    background-color: #1e558d;
+    background-color: lightgray;
 }
 
 h1 {
@@ -10,12 +10,12 @@ h1 {
     text-align: center;
     text-decoration: underline;
     background-color: darkgray;
-    color: #00a3fe;
+    color: #1e558d;
     padding-bottom: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 h2 {
-    color: white; 
+    color: #1e558d; 
 }
 
 .content {
