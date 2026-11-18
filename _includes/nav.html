@@ -1,0 +1,53 @@
+{%- comment -%}
+  Site navigation. The "Project Showcase" menu is built from _data/projects.yml:
+  one top-level dropdown, one sub-menu per section, links grouped by label.
+{%- endcomment -%}
+{%- assign in_showcase = false -%}
+{%- for section in site.data.projects -%}{%- for group in section.groups -%}{%- for item in group.items -%}
+  {%- if item.url == page.url -%}{%- assign in_showcase = true -%}{%- endif -%}
+{%- endfor -%}{%- endfor -%}{%- endfor -%}
+<header class="site-header">
+  <nav class="site-nav container" aria-label="Main">
+    <a class="brand" href="{{ '/' | relative_url }}">Charles Biggar</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <ul class="menu" id="primary-menu">
+      <li><a class="menu-link" href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} aria-current="page"{% endif %}>Home</a></li>
+
+      <li class="has-sub">
+        <button class="menu-link menu-btn{% if in_showcase %} is-current{% endif %}" type="button" aria-expanded="false" aria-controls="menu-showcase">Project Showcase</button>
+        <ul class="submenu" id="menu-showcase">
+          {%- for section in site.data.projects %}
+          <li class="has-sub">
+            <button class="submenu-btn" type="button" aria-expanded="false" aria-controls="menu-{{ section.id }}">{{ section.title | escape }}</button>
+            <ul class="submenu flyout" id="menu-{{ section.id }}">
+              {%- for group in section.groups %}
+              {%- if group.label %}
+              <li class="menu-label" role="presentation">{{ group.label | escape }}</li>
+              {%- endif %}
+              {%- for item in group.items %}
+              <li><a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title | escape }}{% if item.external %}<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens another site)</span>{% endif %}</a></li>
+              {%- endfor %}
+              {%- endfor %}
+            </ul>
+          </li>
+          {%- endfor %}
+          <li class="menu-sep" role="presentation"></li>
+          <li><a class="menu-all" href="{{ '/#projects' | relative_url }}">View all projects</a></li>
+        </ul>
+      </li>
+
+      <li><a class="menu-link" href="{{ '/resume.html' | relative_url }}">Resume</a></li>
+      <li><a class="menu-link" href="{{ '/#about' | relative_url }}">About</a></li>
+
+      <li class="menu-social">
+        <a class="menu-link" href="{{ site.author.linkedin }}" rel="me">LinkedIn</a>
+        <a class="menu-link" href="{{ site.author.github }}" rel="me">GitHub</a>
+      </li>
+    </ul>
+  </nav>
+</header>

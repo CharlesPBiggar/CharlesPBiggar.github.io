@@ -1,150 +1,101 @@
-<!--Main Page-->
-<!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Charles' Webpage</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Charles' Website</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>      
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Data Projects
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="#">Data Analytics Projects</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="https://charlespbiggar.github.io/Weather_Web_Visualization_Dashboard/index.html">Weather Dashboard</a>
-                                <a class="dropdown-item" href="#"> Pymaceuticals Dashboard</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">More coming soon!</a>
-                            </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Crypto & Blockchain
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="#">Cryptocurrency Projects</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="bitcoinanalysis.html">Bitcoin (BTC) Review</a>
-                                <a class="dropdown-item" href="ethereumanalysis.html">Ethereum (ETH) Review</a>
-                                <a class="dropdown-item" href="polygonanalysis.html">Polygon (MATIC) Analysis</a>
-                                <!-- <a class="dropdown-item" href="chainlinkanalysis.html">Chainlink (LINK) Review</a> -->
-                                <a class="dropdown-item" href="vetanalysis.html">VeChain (VET) Review</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <div class="dropdown-item">Cryptocurrency Mining</div>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="ethereummining.html">Ethereum Mining How-To</a>
-                                <a class="dropdown-item" href="heliumpresentation.html">Helium Network Mining Presentation</a>
-                                <div class="dropdown-divider"></div>
-                            </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Still a work in progress!</a> -->
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+---
+layout: default
+description: Charles Biggar — Delivery Manager in client delivery, Scrum leadership, fintech and blockchain. Data analytics and digital-asset project showcase.
+---
+<section class="hero">
+  <div class="container">
+    <h1>Charles Biggar</h1>
+    <p class="hero-headline">Delivery Manager · Client Delivery &amp; Scrum Leadership · Fintech &amp; Blockchain</p>
+    {%- comment -%} TODO(content pass): finalize intro copy {%- endcomment %}
+    <p class="hero-intro">I lead client-facing delivery of fintech and blockchain products and act as Scrum Master for client teams. This site collects my data analytics and blockchain projects.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/resume.html' | relative_url }}">View resume</a>
+      <a class="btn btn-ghost" href="{{ '/resume/Charles_Biggar_Resume.pdf' | relative_url }}" download>Download PDF</a>
+      <a class="btn btn-ghost" href="{{ site.author.linkedin }}" rel="me">LinkedIn</a>
+      <a class="btn btn-ghost" href="{{ site.author.github }}" rel="me">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Project Showcase</span>
+      <h2 id="projects-title">Selected work</h2>
+      <p>Data analysis projects and research on blockchain networks and digital assets.</p>
+    </div>
+
+    {%- for section in site.data.projects %}
+    {%- assign total = 0 -%}
+    {%- for group in section.groups -%}{%- assign total = total | plus: group.items.size -%}{%- endfor %}
+    <div class="project-group" id="{{ section.id }}">
+      <h3 class="project-group-title">{{ section.title | escape }} <span class="count">{{ total }} projects</span></h3>
+      <ul class="card-grid">
+        {%- for group in section.groups %}{%- for item in group.items %}
+        <li>
+          <a class="card" href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">
+            <div class="card-media">
+              <img src="{{ '/images/thumbs/' | append: item.thumb | relative_url }}" alt="" width="720" height="405" loading="lazy">
             </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Charles Biggar's Webpage</h1>
-                </div>
+            <div class="card-body">
+              <h4 class="card-title">{{ item.title | escape }}</h4>
+              <p class="card-summary">{{ item.summary }}</p>
+              <div class="card-meta">
+                {%- for tag in item.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                {%- if item.external %}<span class="tag tag-ext">External ↗</span>{% endif %}
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <img class = "photo1" src="images/cryptocurrency.jpg" alt="Image of CryptoCurrency" width='938' height='375'>
-                </div>
-            </div>
-            <br/>
-            <div class="row content">
-                <div class="about-me col-lg-7">
-                    <h2>About Me:</h2>
-                    <hr>
-                    <p>
-                        Multidisciplinary data analyst and developer with experience in data driven industries and a passion for 
-                        blockchain. I have worked across multiple disciplines with diverse teams to continually drive adaptation 
-                        of cutting-edge strategies. Over the past 2 years, I have leveraged my analytics and development skills to 
-                        explore blockchain applications, perform deep-dive analyses into various cryptocurrency projects, contribute 
-                        to various online cryptocurrency communities, and build my own blockchain applications by teaching myself 
-                        Solidity. This practical knowledge has further heightened my enthusiasm towards cryptocurrencies and blockchain, 
-                        driving further exploration into this growing industry of consumer and enterprise applications of blockchain.
-                    </p>
-                    <br/>
-                    <p>
-                        Besides work I enjoy many hobbies such as building computers, golfing, and hiking. I have 
-                        been building and mainting computers since college and it was the source of my inspiration 
-                        to switch careers from patient care into technology and blockchain. When I’m not at 
-                        my computer coding or building, I love getting outside to golf or go hiking. Golfing has been a hobby of mine 
-                        since I was 12 years old as is a great way to be get outside and by competitive with yourself. 
-                        I also love exploring nature by hiking trails throughout the tri-state area as a way to get 
-                        away from it all and reset myself.         
-                    </p>
-                    <br/>
-                    <p>
-                        Recent education includes Computer Science focused program with skills in Python, Javascript, Excel, VBA, Pandas, 
-                        HTML, and SQL from Columbia University's Data Analytics Boot Camp. I am an insatiable learner who loves developing 
-                        new skills, adapting to changing environments and tackling complex challenges. Enjoys leveraging healthcare background 
-                        and analytics skills to drive data-driven solutions. Recently completed a team-based project using Python and Pandas 
-                        to analyze investments into US-based startup companies using robust visualizations and presented our findings to our 
-                        colleges.  My analytical problem-solving abilities combined with strengths in collaborating across diverse groups makes 
-                        me a valuable addition to any team.
-                    </p>   
-                    <br/>
-                    <p>
-                        I have previous experience as a Shift Supervisor with a demonstrated history of working in the hospital & health care industry 
-                        with Research experience at Columbia Medical Center and New York Medical College. Managed at disruptive healthcare startup 
-                        that has set the standard for Urgent care clinics in the greater NYC area. Skilled in Operations, Customer Service, Data 
-                        Analysis, Research, Microsoft Excel and Microsoft PowerPoint. Strong operations professional with a Bachelor of Science (BS) 
-                        focused in Biology and History from Villanova University.
-                    </p>
-                </div>
-                <div class="links col-lg-4">
-                    <h2>External Links</h2>
-                    <hr>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/charles-p-biggar" target="_blank">LinkedIn Profile</a></li>
-                        <li><a href="https://github.com/CharlesPBiggar" target="_blank">GitHub</a></li>
-                    </ul>
-                    <br/>
-                    <h2>Crypto Projects</h2>
-                    <hr>
-                    <ul>
-                        <li><a href="bitcoinanalysis.html" target="_blank">Bitcoin (BTC) Review</a></li>
-                        <li><a href="ethereumanalysis.html" target="_blank">Ethereum (ETH) Review</a></li>
-                        <li><a href="polygonanalysis.html" target="_blank">Polygon (MATIC) Analysis</a></li>
-                        <!-- <li><a href="chainlinkanalysis.html" target="_blank">Chainlink (LINK) Review</a></li> -->
-                        <li><a href="vetanalysis.html" target="_blank">VeChain (VET) Review</a></li>
-                        <li><a href="ethereummining.html" target="_blank">Ethereum Mining How-To</a></li>
-                        <li><a href="heliumpresentation.html" target="_blank">Helium Network Mining Presentation</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
-    </body>
-</html>
+          </a>
+        </li>
+        {%- endfor %}{%- endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2 id="about-title">About me</h2>
+    </div>
+    {%- comment -%} TODO(content pass): text below is the 2021 copy, unchanged {%- endcomment %}
+    <div class="about-body">
+      <p>
+        Multidisciplinary data analyst and developer with experience in data driven industries and a passion for
+        blockchain. I have worked across multiple disciplines with diverse teams to continually drive adaptation
+        of cutting-edge strategies. Over the past 2 years, I have leveraged my analytics and development skills to
+        explore blockchain applications, perform deep-dive analyses into various cryptocurrency projects, contribute
+        to various online cryptocurrency communities, and build my own blockchain applications by teaching myself
+        Solidity. This practical knowledge has further heightened my enthusiasm towards cryptocurrencies and blockchain,
+        driving further exploration into this growing industry of consumer and enterprise applications of blockchain.
+      </p>
+      <p>
+        Besides work I enjoy many hobbies such as building computers, golfing, and hiking. I have
+        been building and mainting computers since college and it was the source of my inspiration
+        to switch careers from patient care into technology and blockchain. When I’m not at
+        my computer coding or building, I love getting outside to golf or go hiking. Golfing has been a hobby of mine
+        since I was 12 years old as is a great way to be get outside and by competitive with yourself.
+        I also love exploring nature by hiking trails throughout the tri-state area as a way to get
+        away from it all and reset myself.
+      </p>
+      <p>
+        Recent education includes Computer Science focused program with skills in Python, Javascript, Excel, VBA, Pandas,
+        HTML, and SQL from Columbia University's Data Analytics Boot Camp. I am an insatiable learner who loves developing
+        new skills, adapting to changing environments and tackling complex challenges. Enjoys leveraging healthcare background
+        and analytics skills to drive data-driven solutions. Recently completed a team-based project using Python and Pandas
+        to analyze investments into US-based startup companies using robust visualizations and presented our findings to our
+        colleges.  My analytical problem-solving abilities combined with strengths in collaborating across diverse groups makes
+        me a valuable addition to any team.
+      </p>
+      <p>
+        I have previous experience as a Shift Supervisor with a demonstrated history of working in the hospital &amp; health care industry
+        with Research experience at Columbia Medical Center and New York Medical College. Managed at disruptive healthcare startup
+        that has set the standard for Urgent care clinics in the greater NYC area. Skilled in Operations, Customer Service, Data
+        Analysis, Research, Microsoft Excel and Microsoft PowerPoint. Strong operations professional with a Bachelor of Science (BS)
+        focused in Biology and History from Villanova University.
+      </p>
+    </div>
+  </div>
+</section>

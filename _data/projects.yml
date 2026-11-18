@@ -1,0 +1,62 @@
+# Single source of truth for the "Project Showcase" menu and the homepage cards.
+# Add a project here and it appears in both places.
+#
+# sections -> groups (optional label) -> items
+#   url:      site page (starts with /) or full external URL
+#   external: true for links that leave this site
+#   thumb:    image in /images/thumbs (720x405)
+
+- id: data-analytics
+  title: Data Analytics
+  groups:
+    - items:
+        - title: Weather Dashboard
+          url: https://charlespbiggar.github.io/Weather_Web_Visualization_Dashboard/index.html
+          external: true
+          thumb: weather-dashboard.jpg
+          tags: [Python, Matplotlib, API]
+          summary: How weather changes with latitude across 500+ cities, using OpenWeatherMap data.
+        - title: Pymaceuticals Analysis
+          url: https://github.com/CharlesPBiggar/Pymaceuticals
+          external: true
+          thumb: pymaceuticals.jpg
+          tags: [Pandas, Matplotlib, Jupyter]
+          summary: Clinical trial analysis comparing tumor response across four drug regimens.
+
+- id: blockchain
+  title: Blockchain & Digital Assets
+  groups:
+    - label: Project Reviews
+      items:
+        - title: Bitcoin (BTC) Review
+          url: /bitcoinanalysis.html
+          thumb: bitcoin.jpg
+          tags: [Review]
+          summary: The first cryptocurrency.
+        - title: Ethereum (ETH) Review
+          url: /ethereumanalysis.html
+          thumb: ethereum.jpg
+          tags: [Review]
+          summary: Decentralized, open-source blockchain and smart contract platform.
+        - title: Polygon (MATIC) Analysis
+          url: /polygonanalysis.html
+          thumb: polygon.jpg
+          tags: [Review]
+          summary: Ethereum Layer 2 scaling solution.
+        - title: VeChain (VET) Review
+          url: /vetanalysis.html
+          thumb: vechain.jpg
+          tags: [Review]
+          summary: Supply chain and logistics blockchain.
+    - label: Mining
+      items:
+        - title: Ethereum Mining How-To
+          url: /ethereummining.html
+          thumb: ethereum-mining.jpg
+          tags: [Guide]
+          summary: Setting up a GPU to mine ETH.
+        - title: Helium Network Mining Presentation
+          url: /heliumpresentation.html
+          thumb: helium.jpg
+          tags: [Presentation]
+          summary: Overview of mining on the Helium network.
