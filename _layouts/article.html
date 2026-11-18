@@ -1,0 +1,66 @@
+---
+layout: default
+---
+{%- comment -%}
+  Project article. Front matter:
+    title, subtitle, description, section (id from _data/projects.yml),
+    image, wide (true = no sidebar), links (list of {label, items: [{title, url}]})
+{%- endcomment -%}
+{%- assign section = site.data.projects | where: "id", page.section | first -%}
+<header class="page-hero">
+  <div class="container">
+    {%- if section %}
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/#projects' | relative_url }}">Project Showcase</a>
+      <span aria-hidden="true">›</span>
+      <a href="{{ '/#' | append: section.id | relative_url }}">{{ section.title | escape }}</a>
+    </nav>
+    {%- endif %}
+    <h1>{{ page.title | escape }}</h1>
+    {%- if page.subtitle %}
+    <p class="page-subtitle">{{ page.subtitle | escape }}</p>
+    {%- endif %}
+  </div>
+</header>
+
+<div class="container article-layout{% if page.wide %} is-wide{% endif %}">
+  <article class="article-body prose">
+    {%- if page.image %}
+    <figure class="article-figure">
+      <img src="{{ page.image | relative_url }}" alt="" width="{{ page.image_width | default: 1200 }}" height="{{ page.image_height | default: 600 }}">
+    </figure>
+    {%- endif %}
+    {{ content }}
+  </article>
+
+  {%- unless page.wide %}
+  <aside class="article-aside">
+    {%- if page.links %}
+    <section class="aside-card">
+      <h2>Useful links</h2>
+      {%- for group in page.links %}
+      {%- if group.label %}<h3>{{ group.label | escape }}</h3>{% endif %}
+      <ul>
+        {%- for link in group.items %}
+        <li><a href="{{ link.url }}" rel="noopener">{{ link.title | escape }}<span class="ext" aria-hidden="true">↗</span></a></li>
+        {%- endfor %}
+      </ul>
+      {%- endfor %}
+    </section>
+    {%- endif %}
+
+    {%- if section %}
+    <section class="aside-card">
+      <h2>More in {{ section.title | escape }}</h2>
+      <ul class="aside-related">
+        {%- for group in section.groups %}{%- for item in group.items %}
+        {%- unless item.url == page.url %}
+        <li><a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.title | escape }}</a></li>
+        {%- endunless %}
+        {%- endfor %}{%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+  </aside>
+  {%- endunless %}
+</div>

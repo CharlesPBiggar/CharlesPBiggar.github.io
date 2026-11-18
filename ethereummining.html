@@ -1,194 +1,107 @@
-<!--Main Page-->
-<!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Charles' Webpage</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Charles' Website</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>      
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Data Projects
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="#">Data Analytics Projects</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="https://charlespbiggar.github.io/Weather_Web_Visualization_Dashboard/index.html">Weather Dashboard</a>
-                                <a class="dropdown-item" href="#"> Pymaceuticals Dashboard</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">More coming soon!</a>
-                            </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Crypto & Blockchain
-                        </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="#">Cryptocurrency Projects</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="bitcoinanalysis.html">Bitcoin (BTC) Review</a> 
-                                <a class="dropdown-item" href="ethereumanalysis.html">Ethereum (ETH) Review</a>
-                                <a class="dropdown-item" href="polygonanalysis.html">Polygon (MATIC) Analysis</a>
-                                <!-- <a class="dropdown-item" href="chainlinkanalysis.html">Chainlink (LINK) Review</a> -->
-                                <a class="dropdown-item" href="vetanalysis.html">VeChain (VET) Review</a>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <div class="dropdown-item">Cryptocurrency Mining</div>
-                                <div class="dropdown-item">-----------------------------------</div>
-                                <a class="dropdown-item" href="ethereummining.html">Ethereum Mining How-To</a>
-                                <a class="dropdown-item" href="heliumpresentation.html">Helium Network Mining Presentation</a>
-                                <div class="dropdown-divider"></div>
-                            </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Still a work in progress!</a> -->
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3>Ethereum Mining Guide</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <img class = "photo1" src="images/ethmining.jpg" alt="Image of CryptoCurrency" width='900' height='432'>
-                </div>
-            </div>
-            <br/>
-            <div class="row content">
-                <div class="about-me col-lg-7">
-                    <h2>GPU Ethereum Mining How-To:</h2>
-                    <hr>
-                    <p>
-                        With the recent boom in crypto prices it's a good time to get that Graphics Card you having laying around on your personal PC up and running 
-                        to make some $$ by mining ETH (Ethereum). As a PC Gamer its nice to know that the investment I made in my computer for gaming can finally 
-                        be put to some "non-recreational"use! How to I know if my computer can mine ETH? The first question to answer would be if you have 
+---
+layout: article
+title: Ethereum Mining Guide
+subtitle: GPU Ethereum Mining How-To
+description: Setting up a GPU to mine ETH.
+section: blockchain
+image: /images/articles/ethereum-mining.jpg
+image_width: 1196
+image_height: 575
+links:
+- label: Mining Profitability resources
+  items:
+  - title: WhattoMine GPU profitability guide
+    url: https://www.whattomine.com/gpus
+  - title: Rig Specific profitability guide
+    url: https://www.whattomine.com/coins
+- label: Software Links
+  items:
+  - title: Team Red Miner (AMD GPUs)
+    url: https://github.com/todxx/teamredminer/releases
+  - title: EthMiner
+    url: https://github.com/ethereum-mining/ethminer/releases
+  - title: LoLMiner
+    url: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.29
+- label: Mining Pool Links
+  items:
+  - title: Ethermine Pool Site
+    url: https://ethermine.org/?theme=dark
+- label: Ethereum Wallet Links
+  items:
+  - title: MetaMask Wallet
+    url: https://metamask.io/
+- label: Great Mining Guides
+  items:
+  - title: Son of a Tech ETH Guide
+    url: https://www.youtube.com/watch?v=xqny5SSFRTo
+  - title: Hash Raptor ETH Guide
+    url: https://www.youtube.com/watch?v=ByDO5xIzQiU&t=2s
+---
+<p>
+                        With the recent boom in crypto prices it's a good time to get that Graphics Card you having laying around on your personal PC up and running
+                        to make some $$ by mining ETH (Ethereum). As a PC Gamer its nice to know that the investment I made in my computer for gaming can finally
+                        be put to some "non-recreational"use! How to I know if my computer can mine ETH? The first question to answer would be if you have
                         GPU (Graphics Processing Unit aka Graphics Card) in your computer. If you do then you are good to get started, otherwise you will need to
-                        invest in a new graphics card to insert into your computer or build/purchase your own (Don't know how? I will be posting a guide on building 
-                        your own customer computer for mining or gaming in the future!) For those who have Graphics Cards ready to go, below will be a quick and general 
-                        guide for quick set up and install. 
+                        invest in a new graphics card to insert into your computer or build/purchase your own (Don't know how? I will be posting a guide on building
+                        your own customer computer for mining or gaming in the future!) For those who have Graphics Cards ready to go, below will be a quick and general
+                        guide for quick set up and install.
                     </p>
-                    <br>
-                    <p>    
-                        First create a wallet that you will be paid out too. MetaMask is the best wallet in my opinion for the Ethereum Mainnet. So download 
-                        it onto your phone and create an account. On setup you will have to make a password and then have to save a 12 word passphrase. 
-                        Copy this 12 word passphrase down somewhere offline, make a couple of copies and find somewhere secure to stash it (this is the 
-                        backdoor to your wallet, so if someone finds it they can access all of your funds). Otherwise once you have it all set up you 
-                        will have a public address to your wallet that you can copy and paste into your mining software and you will be paid out to that 
-                        wallet once you hit the payout threshold for Ethermine (that's the pool I mine too and is one of the biggest safest ones you can use). 
-                    </p>
-                    <br/>
                     <p>
-                        Open the pool link below for ethermine and click the link for "Start Mining" this will give you all the info you need to start mining. 
-                        Next download one of the below softwares ( I hear Ethminer is great for Nvidia gpus, I only have AMD gpus so I use a different software 
-                        that's optimized for AMD). Your computer will think that this software is a virus because it considers all mining software to be a virus, 
-                        so dont be concerned, I provided you the correct links so no worries about downloading malicious software. Once you have that software 
-                        downloaded onto your desktop you need to find the .bat file that says "eth" and open that file and it will give you a place to paste your 
-                        wallets public address (from metamask) and the server info from Ethermine.com.                    
+                        First create a wallet that you will be paid out too. MetaMask is the best wallet in my opinion for the Ethereum Mainnet. So download
+                        it onto your phone and create an account. On setup you will have to make a password and then have to save a 12 word passphrase.
+                        Copy this 12 word passphrase down somewhere offline, make a couple of copies and find somewhere secure to stash it (this is the
+                        backdoor to your wallet, so if someone finds it they can access all of your funds). Otherwise once you have it all set up you
+                        will have a public address to your wallet that you can copy and paste into your mining software and you will be paid out to that
+                        wallet once you hit the payout threshold for Ethermine (that's the pool I mine too and is one of the biggest safest ones you can use).
                     </p>
-                    <br/>
                     <p>
-                        Once that's all set up you are basically good to go. Make sure you exclude that folder with the mining software from your virus scanning 
-                        software and your firewall so that your computer can connect to the specified mining server. Give that youtube video a watch through before 
+                        Open the pool link below for ethermine and click the link for "Start Mining" this will give you all the info you need to start mining.
+                        Next download one of the below softwares ( I hear Ethminer is great for Nvidia gpus, I only have AMD gpus so I use a different software
+                        that's optimized for AMD). Your computer will think that this software is a virus because it considers all mining software to be a virus,
+                        so dont be concerned, I provided you the correct links so no worries about downloading malicious software. Once you have that software
+                        downloaded onto your desktop you need to find the .bat file that says "eth" and open that file and it will give you a place to paste your
+                        wallets public address (from metamask) and the server info from Ethermine.com.
+                    </p>
+                    <p>
+                        Once that's all set up you are basically good to go. Make sure you exclude that folder with the mining software from your virus scanning
+                        software and your firewall so that your computer can connect to the specified mining server. Give that youtube video a watch through before
                         you do any of this just so you are familiar with the process, especially if you are a visual learning like myself. Happy Mining!
 
                     </p>
-                    <br/>
                     <p>
-                        <b>UPDATE (3/6/2020):</b> EIP-1559 has recently been approved by the Ethereum Network to be included in the London Hardfork in July of 2021. What does 
-                        this mean for mining? Short Answer, mining will become less profitable for miners due to some of the fees being burned by the network instead of 
-                        being paid out to the miners. While EIP-1559 will be better for people transacting on the Ethereum Network, due to the reduction in fees paid to 
-                        transact on the blockchain. This will greatly reduce the profits that miners recieve because during times of high traffic miners will not be able 
-                        to charge a premium to those who want to execute their transactions faster. People transacting will have the option to tip miners to expidite their 
-                        transaction time, but this will not offset the miners loss in revenue in a signifigant fasion. Where will the extra fees go now? With EIP-1559 the 
-                        base fee collected by the network will be burnt, which means the ETH spent will literally "go up in smoke." This will essentially create deflationary 
-                        pressure on the supply of ETH, which probably will cause a greater price increase to ETH in the long run. So even though the fees you will collect 
-                        will be lesser in value of ETH, if the price of ETH goes up in response to the burning of currency, the fiat value of the ETH that miners collect could 
-                        be help offset the losses. But we will have to see what happens once EIP-1559 is implemented in July to see the full effects of the upgrade to the network, 
-                        and how profitabilite mining will be until the inevitable upgrade to Etheruem 2.0 and its Proof of Stake (POS) network model in Q4 2021 or Q1 2020. 
+                        <b>UPDATE (3/6/2020):</b> EIP-1559 has recently been approved by the Ethereum Network to be included in the London Hardfork in July of 2021. What does
+                        this mean for mining? Short Answer, mining will become less profitable for miners due to some of the fees being burned by the network instead of
+                        being paid out to the miners. While EIP-1559 will be better for people transacting on the Ethereum Network, due to the reduction in fees paid to
+                        transact on the blockchain. This will greatly reduce the profits that miners recieve because during times of high traffic miners will not be able
+                        to charge a premium to those who want to execute their transactions faster. People transacting will have the option to tip miners to expidite their
+                        transaction time, but this will not offset the miners loss in revenue in a signifigant fasion. Where will the extra fees go now? With EIP-1559 the
+                        base fee collected by the network will be burnt, which means the ETH spent will literally "go up in smoke." This will essentially create deflationary
+                        pressure on the supply of ETH, which probably will cause a greater price increase to ETH in the long run. So even though the fees you will collect
+                        will be lesser in value of ETH, if the price of ETH goes up in response to the burning of currency, the fiat value of the ETH that miners collect could
+                        be help offset the losses. But we will have to see what happens once EIP-1559 is implemented in July to see the full effects of the upgrade to the network,
+                        and how profitabilite mining will be until the inevitable upgrade to Etheruem 2.0 and its Proof of Stake (POS) network model in Q4 2021 or Q1 2020.
 
                     </p>
                     <p>
-                        <b>UPDATE (6/1/2020):</b> Ethermine has updated their payout policy to include payouts to the Matic Network. This update will be great for everyone, 
-                        especially smaller miners as more of your mining power will be going towards your payouts instead of paying for the fees to secure your payouts on the 
-                        Ethereum Network. The payout structure has 2 options: Ethereum Mainnet & L2 Polygon. Those wishing to still be paid out to the Ethereum Mainnet will have a daily 
+                        <b>UPDATE (6/1/2020):</b> Ethermine has updated their payout policy to include payouts to the Matic Network. This update will be great for everyone,
+                        especially smaller miners as more of your mining power will be going towards your payouts instead of paying for the fees to secure your payouts on the
+                        Ethereum Network. The payout structure has 2 options: Ethereum Mainnet & L2 Polygon. Those wishing to still be paid out to the Ethereum Mainnet will have a daily
                         payout if their unpaid ETH balance is greater than 1 ETH and monthly payouts on the 28th of every month if their unpaid balance is greater than 0.01 ETH. Those
-                        opting for the L2 Polygon option will have daily payouts if their unpaid balance is greater than 0.005 ETH. The Polygon option is great for smaller miners who want 
-                        to receive more frequent payouts. This change was implemented because of the increasingly high fees associated with transacting on the Ethereum Mainnet. Miner's 
-                        profits were increasingly going to fees and creating the blocks that those payouts were being sent on. With higher payout thresholds for the Ethereum Mainnet, that 
-                        means more profits for everyone, at the cost of less frequent payouts. This is why the Polygon option is great for smaller miners. As Polygon is much faster and less 
-                        costly to transact on, smaller miners will be able to recieve more frequent payouts without the loss in profits assosciated with creating those blocks on the Ethereum 
+                        opting for the L2 Polygon option will have daily payouts if their unpaid balance is greater than 0.005 ETH. The Polygon option is great for smaller miners who want
+                        to receive more frequent payouts. This change was implemented because of the increasingly high fees associated with transacting on the Ethereum Mainnet. Miner's
+                        profits were increasingly going to fees and creating the blocks that those payouts were being sent on. With higher payout thresholds for the Ethereum Mainnet, that
+                        means more profits for everyone, at the cost of less frequent payouts. This is why the Polygon option is great for smaller miners. As Polygon is much faster and less
+                        costly to transact on, smaller miners will be able to recieve more frequent payouts without the loss in profits assosciated with creating those blocks on the Ethereum
                         Mainnet. This could also be a great option for miners who are interested in interacting with the many dapps that are located on the Polygon Network, as you won't have
-                        to pay the gas fees associated with moving funds from the Ethereum Mainnet. This is a great improvment to the payout system by the Ethermine team, especially with the 
+                        to pay the gas fees associated with moving funds from the Ethereum Mainnet. This is a great improvment to the payout system by the Ethermine team, especially with the
                         looming implementation of EIP-1559 which will drive down all miners income.
                     </p>
                     <p>
-                        <b>UPDATE (6/3/2020):</b> Great news for miners of ETH. Ethereum 2.0 Upgrade has been pushed back to from Q4 2021 to sometime in late 2022. This is great news 
-                        for miners because now we all have an extra 6-9 months of extra mining to stack up on our ETH stockpiles (if you are a HODLer like me). This gives miners 
-                        who where thinking about investing in new graphics cards extra time to make that money back before the upgrade to ETH 2.0. Still with the upcoming 
-                        implementation of EIP-1559 in London Hardfork in July, I would caution people looking to invest in new equipment as we have yet to see how much of a hit 
-                        mining performance and profitability will take due to this upgrade, especially as the price for GPUs are still very overpriced due to supply shortages and 
-                        scalpers. Those who have computers with a GPU (with > 4gb of VRAM) laying around should get on the network and start mining as you have much more time to 
-                        build your ETH stack for the longterm or just make some quick money with the hardware you already have laying around.  
+                        <b>UPDATE (6/3/2020):</b> Great news for miners of ETH. Ethereum 2.0 Upgrade has been pushed back to from Q4 2021 to sometime in late 2022. This is great news
+                        for miners because now we all have an extra 6-9 months of extra mining to stack up on our ETH stockpiles (if you are a HODLer like me). This gives miners
+                        who where thinking about investing in new graphics cards extra time to make that money back before the upgrade to ETH 2.0. Still with the upcoming
+                        implementation of EIP-1559 in London Hardfork in July, I would caution people looking to invest in new equipment as we have yet to see how much of a hit
+                        mining performance and profitability will take due to this upgrade, especially as the price for GPUs are still very overpriced due to supply shortages and
+                        scalpers. Those who have computers with a GPU (with > 4gb of VRAM) laying around should get on the network and start mining as you have much more time to
+                        build your ETH stack for the longterm or just make some quick money with the hardware you already have laying around.
                     </p>
-                </div>
-                <div class="links col-lg-4">
-                    <h2>Useful Links</h2>
-                    <hr>
-                    <h5>Mining Profitability resources</h5>
-                    <ul>
-                        <li><a href="https://www.whattomine.com/gpus" target="_blank">WhattoMine GPU profitability guide</a></li>
-                        <li><a href="https://www.whattomine.com/coins" target="_blank">Rig Specific profitability guide</a></li>
-                    </ul>
-                    
-                    <h5>Software Links</h5>
-                    <ul> 
-                        <li><a href="https://github.com/todxx/teamredminer/releases" target="_blank">Team Red Miner (AMD GPUs)</a></li>
-                        <li><a href="https://github.com/ethereum-mining/ethminer/releases" target="_blank">EthMiner</a></li>
-                        <li><a href="https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.29" target="_blank">LoLMiner</a></li>
-                    </ul>
-                    <h5>Mining Pool Links</h5>
-                    <ul>
-                        <li><a href="https://ethermine.org/?theme=dark" target="_blank">Ethermine Pool Site</a></li>
-                    </ul>
-                    <h5>Ethereum Wallet Links</h5>
-                    <ul>
-                        <li><a href="https://metamask.io/" target="_blank">MetaMask Wallet</a></li>
-                    </ul>
-                    <h5>Great Mining Guides</h5>
-                    <ul>
-                        <li><a href="https://www.youtube.com/watch?v=xqny5SSFRTo" target="_blank">Son of a Tech ETH Guide</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=ByDO5xIzQiU&t=2s" target="_blank">Hash Raptor ETH Guide</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
-    </body>
-</html>
